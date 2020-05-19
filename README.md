@@ -14,3 +14,8 @@ For this workflow we mainly import the data in the form of column vectors. A rep
 
 ![alt text](https://github.com/RishalAggarwal/Matlab_IVIVC/blob/master/images/import_data.jpg)
 
+## In vitro Curve fitting
+
+Matlab provides a Curve Fitting tool ([link](https://in.mathworks.com/help/curvefit/curve-fitting.html)) that can be used to fit cumulative distributions. It also has a section to fill in custom equations like the weibull cumulative equation in the manner below:
+
+[!alt text](
