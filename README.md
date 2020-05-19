@@ -1,6 +1,5 @@
 # Matlab_IVIVC
 A tutorial/workflow and code for performing In Vitro - In Vivo Correlation for formulation scientists using matlab
-
 Contents:
 1) Importing Data
 2) In Vitro curve fitting
@@ -10,3 +9,4 @@ Contents:
 
 ## Importing Data
 
+Matlab provides an in-built tool for importing data from csv and excel sheets. More about this in this link 
