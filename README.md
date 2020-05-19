@@ -12,5 +12,5 @@ Contents:
 Matlab provides an in-built tool for importing data from csv and excel sheets. More about it in this [link](https://in.mathworks.com/help/matlab/ref/importtool.html). 
 For this workflow we mainly import the data in the form of column vectors. A representative screenshot for the same is give below.
 
-![alt text]()
+![alt text](https://github.com/RishalAggarwal/Matlab_IVIVC/blob/master/images/import_data.jpg)
 
