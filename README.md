@@ -48,3 +48,17 @@ In_vitro_goodness =
           rmse: 0.0325
           
 ```
+I can also use the curve object to get values for certain data points.
+
+```
+
+>> In_vitro_curve(30)
+
+ans =
+
+    0.9572
+    
+```
+
+
+
