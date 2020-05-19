@@ -8,5 +8,5 @@ Contents:
 4) Point Area Convolution and Deconvolution
 5) Plotting and comparing results
 
-##Importing Data
+## Importing Data
 
