@@ -22,4 +22,29 @@ Matlab provides a Curve Fitting tool ([link](https://in.mathworks.com/help/curve
 
 The fit curve can then be imported back in to the workspace. From the drop down menu: Fit -> Save to Workspace -> fill in the name of the curve for "save fit to Matlab object named" and the name by which you want to save the metrics of the curve fit for "save goodness of fit to MATLAB struct named". 
 
-In my case I've filled them in as In_vitro_curve and In_vitro_goodness.
+In my case I've filled them in as In_vitro_curve and In_vitro_goodness. I can then review my results and parameters by entering the names anytime in the command window.
+
+```
+>> In_vitro_curve
+
+In_vitro_curve = 
+
+     General model:
+     In_vitro(x) = 1-exp(-(x/a)^b)
+     Coefficients (with 95% confidence bounds):
+       a =       7.628  (6.996, 8.26)
+       b =       0.838  (0.7456, 0.9304)
+
+>> In_vitro_goodness
+
+In_vitro_goodness = 
+
+  struct with fields:
+
+           sse: 0.0116
+       rsquare: 0.9877
+           dfe: 11
+    adjrsquare: 0.9866
+          rmse: 0.0325
+          
+```
