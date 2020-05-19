@@ -1,7 +1,8 @@
 % code inspired from that written by Petter Stefansson
 % (https://in.mathworks.com/matlabcentral/answers/478999-how-to-show-r-square-correlation-and-rmse-on-a-scatterplot)
-function [RMSE,R_squared]=plot_line(Fraction_absorbed,Fraction_released)
-plot(Fraction_released, Fraction_absorbed, 'o','displayname','Scatterplot')
+function [RMSE,R_squared]=plot_line(Fraction_absorbed,Fraction_released,label)
+colour=rand(1,3);
+plot(Fraction_released, Fraction_absorbed, 'o','color',colour,'displayname',label)
 title('Correlation')
 xlabel('In Vitro Release')
 ylabel('In Vivo Absorption')
@@ -11,7 +12,7 @@ b = [ones(size(Fraction_released,1),1) Fraction_released]\Fraction_absorbed;
 RegressionLine = [ones(size(Fraction_released,1),1) Fraction_released]*b;
 % Plot it in the scatter plot and show equation.
 hold on,
-plot(Fraction_released,RegressionLine,'displayname',sprintf('Regression line (y = %0.2f*x + %0.2f)',b(2),b(1)))
+plot(Fraction_released,RegressionLine,'color',colour,'HandleVisibility','off')
 legend('location','nw')
 % RMSE between regression line and y
 RMSE = sqrt(mean((Fraction_absorbed-RegressionLine).^2));
