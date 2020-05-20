@@ -21,5 +21,6 @@ SS_X = sum((RegressionLine-mean(RegressionLine)).^2);
 SS_Y = sum((Fraction_absorbed-mean(Fraction_absorbed)).^2);
 SS_XY = sum((RegressionLine-mean(RegressionLine)).*(Fraction_absorbed-mean(Fraction_absorbed)));
 R_squared = SS_XY/sqrt(SS_X*SS_Y);
+fprintf('Regression line (y = %0.2f*x + %0.2f)',b(2),b(1))
 fprintf('RMSE: %0.2f | R2: %0.2f\n',RMSE,R_squared)
 end
