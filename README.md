@@ -76,7 +76,7 @@ Absorbed=wagner_nelson(Time,Concentration,ke)
 To get the calculated plasma profile we first need to get the estimated absorption constant. We can get this by using the curve fitting app again. Just plot the Absorbed values on y axis and time values on x axis and fill in this custom equation which assumes a first order absorption process:
 
 ```
-exp(-a*x)
+1-exp(-a*x)
 ```
 
 The estimated value of 'a' will be the absorption rate constant. The absorption and elimination rate constant can be used to simulate a curve using the simbiology and simbiology model app in a similar manner as shown in the video [here](https://www.mathworks.com/videos/simulating-a-model-in-simbiology-117245.html).
