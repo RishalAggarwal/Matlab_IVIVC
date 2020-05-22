@@ -60,10 +60,20 @@ ans =
 
 ##  Model Based Convolution Deconvolution 
 
-Currently only Wagner Nelson is implemented in this workflow. It require a time as well as a plasma concentration column vector which can easily be imported from excel as shown before. In addition it also requires elimination rate constant to be 'ke' to be calculated already. Make sure that the Time and Concentration column vectors begin with a data point for '0' time. If it does'nt then the data point can easily be added in the following maner:
+Currently only Wagner Nelson is implemented in this workflow. It require a time as well as a plasma concentration column vector which can easily be imported from excel as shown before. In addition it also requires elimination rate constant to be 'ke' to be calculated already. Make sure that the Time and Concentration column vectors begin with a data point for '0' time. If it does not, then the data point can easily be added in the following maner:
 
 ```
 Time=[0;TIme];
 Concentration=[0;Concentration];
 ```
 
+The cumulative fraction absorbed can be got by running:
+
+``` 
+Absorbed=wagner_nelson(Time,Concentration,ke)
+```
+
+To get the calculated plasma profile we first need to get the estimated absorption constant. We can get this by using the curve fitting app again. Just plot the Absorbed values on y axis and time values on x axis and fill in the custom equation:
+
+'''
+exp(
