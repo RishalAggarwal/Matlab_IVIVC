@@ -81,3 +81,21 @@ To get the calculated plasma profile we first need to get the estimated absorpti
 
 The estimated value of 'a' will be the absorption rate constant. The dose, absorption rate constant and elimination rate constant can be used to simulate a curve using the simbiology and simbiology model app in a similar manner as shown in the video [here](https://www.mathworks.com/videos/simulating-a-model-in-simbiology-117245.html).
 
+For evaluating the IVIVC model two functions are provided. Plot_line function plots a regression line between the fraction drug absorbed and fraction drug released. It also requires a label to call the line plot. It returns the RMSE, the R2 and prints the line equation. A representative example is given below.
+
+```
+>>[RMSE,R2]=plot_line(absorbed,released,'wagner nelson')
+Regression line (y = 1.14*x + -0.12)RMSE: 0.06 | R2: 0.99
+
+RMSE =
+
+    0.0592
+
+
+R2 =
+
+    0.9867
+
+```
+
+[!alt text]
