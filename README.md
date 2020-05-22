@@ -99,3 +99,40 @@ R2 =
 ```
 
 ![alt text](https://github.com/RishalAggarwal/Matlab_IVIVC/blob/master/images/Wagner_nelson_img.jpg)
+
+The compare_plasma_conc function returns the observed and calculated AUC and Cmax as well as the percentage error between the observed and calculated values.
+
+```
+>> [Auc_ob,Auc_cal,Cmax_ob,Cmax_cal,pe_auc,pe_Cmax]=Compare_plasma_conc(Time,Concentration,time_calculated,conc_calculated)
+
+Auc_ob =
+
+    6.7688
+
+
+Auc_cal =
+
+    5.4519
+
+
+Cmax_ob =
+
+    0.6210
+
+
+Cmax_cal =
+
+    0.4309
+
+
+pe_auc =
+
+   19.4548
+
+
+pe_Cmax =
+
+   30.6163
+   ```
+
+![alt text](
