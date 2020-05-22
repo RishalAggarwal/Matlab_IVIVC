@@ -66,7 +66,10 @@ Currently only Wagner Nelson is implemented in this workflow. It require a time 
 Time=[0;TIme];
 Concentration=[0;Concentration];
 ```
-
+To generate the in vitro drug released values for the plasma concentration time points we can use the In_vitro_curve as before.
+```
+released=>> In_vitro_curve(Time);
+```
 The cumulative fraction absorbed can be got by running:
 
 ``` 
@@ -135,4 +138,4 @@ pe_Cmax =
    30.6163
    ```
 
-![alt text](
+![alt text](https://github.com/RishalAggarwal/Matlab_IVIVC/blob/master/images/plasma_profile.jpg)
