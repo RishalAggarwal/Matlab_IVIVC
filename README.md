@@ -79,5 +79,5 @@ To get the calculated plasma profile we first need to get the estimated absorpti
 1-exp(-a*x)
 ```
 
-The estimated value of 'a' will be the absorption rate constant. The absorption and elimination rate constant can be used to simulate a curve using the simbiology and simbiology model app in a similar manner as shown in the video [here](https://www.mathworks.com/videos/simulating-a-model-in-simbiology-117245.html).
+The estimated value of 'a' will be the absorption rate constant. The dose, absorption rate constant and elimination rate constant can be used to simulate a curve using the simbiology and simbiology model app in a similar manner as shown in the video [here](https://www.mathworks.com/videos/simulating-a-model-in-simbiology-117245.html).
 
