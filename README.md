@@ -139,3 +139,5 @@ pe_Cmax =
    ```
 
 ![alt text](https://github.com/RishalAggarwal/Matlab_IVIVC/blob/master/images/plasma_profile.jpg)
+
+Workflow for larger compartment models are yet to be implemented. However something that may be of use is the method of fitting multi-compartment PK models to plasma profiles using the simbiology app in a manner shown [here](https://www.mathworks.com/help/simbio/ug/calculate-NCA-and-estimate-PKPD-parameters.html) in addition I've also written a function that returns the cumulative fraction of drug absorbed
