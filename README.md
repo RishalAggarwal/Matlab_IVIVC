@@ -98,4 +98,4 @@ R2 =
 
 ```
 
-[!alt text]
+[!alt text](https://github.com/RishalAggarwal/Matlab_IVIVC/blob/master/images/Wagner_nelson_img.jpg)
