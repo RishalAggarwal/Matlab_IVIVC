@@ -68,12 +68,12 @@ Concentration=[0;Concentration];
 ```
 To generate the in vitro drug released values for the plasma concentration time points we can use the In_vitro_curve as before.
 ```
-released=>> In_vitro_curve(Time);
+>>released=In_vitro_curve(Time);
 ```
 The cumulative fraction absorbed can be got by running:
 
 ``` 
-Absorbed=wagner_nelson(Time,Concentration,ke)
+>>Absorbed=wagner_nelson(Time,Concentration,ke)
 ```
 
 To get the calculated plasma profile we first need to get the estimated absorption constant. We can get this by using the curve fitting app again. Just plot the Absorbed values on y axis and time values on x axis and fill in this custom equation which assumes a first order absorption process:
