@@ -5,7 +5,7 @@ Contents:
 1) Importing Data
 2) In Vitro curve fitting
 3) Model Based Convolution Deconvolution 
-4) Point Area Convolution and Deconvolution
+4) Point Area/Numerical Convolution and Deconvolution
 5) Plotting and comparing results
 
 ## Importing Data
@@ -58,5 +58,12 @@ ans =
     0.9572 
 ```
 
+##  Model Based Convolution Deconvolution 
 
+Currently only Wagner Nelson is implemented in this workflow. It require a time as well as a plasma concentration column vector which can easily be imported from excel as shown before. In addition it also requires elimination rate constant to be 'ke' to be calculated already. Make sure that the Time and Concentration column vectors begin with a data point for '0' time. If it does'nt then the data point can easily be added in the following maner:
+
+```
+Time=[0;TIme];
+Concentration=[0;Concentration];
+```
 
