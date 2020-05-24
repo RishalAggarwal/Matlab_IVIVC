@@ -152,13 +152,13 @@ The first step is to for numerical convolution and deconvolution is to fit a cur
 ```
 >>Bolus=Bolus_curve(Time)
 ```
-
+Deconvolution is done by reducing the sum of squared errors between observed and calculated plasma concentration values after convolution.
 Numerical Deconvolution to get cumulative absorbed values can be done by using the function in the following manner:
 
 ```
-[absorbed,RMSE]=numerical_deconv(Bolus,Concentration)
+[absorbed]=numerical_deconv(Bolus,Concentration)
 ```
-
+The RMSE returns the error between the calculated and observed plasma concentration values
 For Validation Convolution to get plasma profile is done in the folowing manner:
 
 ```
