@@ -62,7 +62,7 @@ ans =
 Currently only Wagner Nelson is implemented in this workflow. It require a time as well as a plasma concentration column vector which can easily be imported from excel as shown before. In addition it also requires elimination rate constant to be 'ke' to be calculated already. Make sure that the Time and Concentration column vectors begin with a data point for '0' time. If it does not, then the data point can easily be added in the following maner:
 
 ```
-Time=[0;TIme];
+Time=[0;Time];
 Concentration=[0;Concentration];
 ```
 To generate the in vitro drug released values for the plasma concentration time points we can use the In_vitro_curve as before.
