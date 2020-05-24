@@ -169,3 +169,4 @@ Comparing the cumulative fraction absorbed and released values can be done in th
 ```
 >> [Auc_ob,Auc_cal,Cmax_ob,Cmax_cal,pe_auc,pe_Cmax]=Compare_plasma_conc(Time,Concentration,Time,conc_calculated)
 ```
+Feel free to suggest any changes or raise issues with the workflow and I'll try addressing them to the best of my ability.
