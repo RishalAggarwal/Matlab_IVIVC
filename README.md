@@ -6,7 +6,6 @@ Contents:
 2) In Vitro curve fitting
 3) Model Based Convolution Deconvolution 
 4) Point Area/Numerical Convolution and Deconvolution
-5) Plotting and comparing results
 
 ## Importing Data
 
@@ -146,4 +145,27 @@ Workflow for larger compartment models are yet to be implemented. However someth
 >>absorbed=fraction_absorbed(Time,ka)
 ```
 
+## Numerical Convolution/Deconvolution
 
+The first step is to for numerical convolution and deconvolution is to fit a curve to the bolus input. After fitting the curve, the curve object can be used to generate bolus input values for plasma profile time points.
+
+```
+>>Bolus=Bolus_curve(Time)
+```
+
+Numerical Deconvolution to get cumulative absorbed values can be done by using the function in the following manner:
+
+```
+[absorbed,RMSE]=numerical_deconv(Bolus,Concentration)
+```
+
+For Validation Convolution to get plasma profile is done in the folowing manner:
+
+```
+conc_calculated= numerical_conv(absorbed,Bolus)
+```
+Comparing the cumulative fraction absorbed and released values can be done in the same manner as shown before. The plasma profile can also be compared in the exact same manner, with the change that the time values passed should be same for both.
+
+```
+>> [Auc_ob,Auc_cal,Cmax_ob,Cmax_cal,pe_auc,pe_Cmax]=Compare_plasma_conc(Time,Concentration,Time,conc_calculated)
+```
